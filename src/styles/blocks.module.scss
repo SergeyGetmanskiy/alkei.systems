@@ -1,0 +1,624 @@
+@use './index' as *;
+
+// Общие блоки страниц. Один модуль используется несколькими страницами,
+// чтобы не дублировать одинаковую разметку и стили.
+
+// --- Hero внутренних страниц ---------------------------------------------
+.hero {
+  position: relative;
+  padding-block: 56px 40px;
+
+  @include from('md') {
+    padding-block: 80px 56px;
+  }
+
+  @include from('lg') {
+    padding-block: 104px 72px;
+  }
+}
+
+.heroInner {
+  @include container;
+
+  max-width: 960px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: $fs-tiny;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $color-text-dim;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding: 6px 14px;
+  font-size: $fs-tiny;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: $color-text-muted;
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.28);
+  border-radius: $radius-pill;
+}
+
+.heroTitle {
+  margin-top: 16px;
+  font-size: $fs-h1;
+}
+
+.heroLead {
+  max-width: 70ch;
+  margin-top: 20px;
+  font-size: $fs-lead;
+  line-height: $lh-snug;
+  color: $color-text-muted;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+// --- Секции --------------------------------------------------------------
+.section {
+  @include section-space(52px, 52px);
+}
+
+.sectionTight {
+  padding-block: 28px 44px;
+
+  @include from('lg') {
+    padding-block: 36px 56px;
+  }
+}
+
+.sectionInner {
+  @include container;
+}
+
+.sectionHead {
+  max-width: 780px;
+  margin-bottom: 32px;
+
+  @include from('lg') {
+    margin-bottom: 44px;
+  }
+}
+
+.title {
+  font-size: $fs-h2;
+}
+
+.lead {
+  max-width: 70ch;
+  margin-top: 14px;
+  font-size: $fs-lead;
+  line-height: $lh-snug;
+  color: $color-text-muted;
+}
+
+.subtitle {
+  max-width: 70ch;
+  margin-top: 10px;
+  color: $color-text-muted;
+}
+
+.accentTitle {
+  @include gradient-text;
+}
+
+// --- Сетки и карточки ----------------------------------------------------
+.grid {
+  display: grid;
+  gap: 16px;
+
+  @include from('md') {
+    gap: 20px;
+  }
+}
+
+.grid2,
+.grid3,
+.grid4 {
+  grid-template-columns: 1fr;
+}
+
+@include from('md') {
+  .grid2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@include from('lg') {
+  .grid3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.card {
+  @include card;
+
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  transition: transform $transition-base, border-color $transition-base,
+    box-shadow $transition-base;
+
+  @include from('md') {
+    padding: 26px;
+  }
+}
+
+.cardInteractive {
+  &:hover {
+    border-color: $color-border-strong;
+    box-shadow: $shadow-raise;
+    transform: translateY(-3px);
+  }
+
+  @include reduced-motion {
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.cardTag {
+  @include gradient-text;
+
+  font-size: $fs-tiny;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.cardNumber {
+  display: block;
+  margin-bottom: 12px;
+  font-size: $fs-tiny;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: rgba(34, 211, 238, 0.85);
+}
+
+.cardTitle {
+  margin-top: 12px;
+  font-size: $fs-h3;
+}
+
+.cardLead {
+  margin-top: 10px;
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: $lh-snug;
+  color: $color-text;
+}
+
+.cardText {
+  margin-top: 12px;
+  color: $color-text-muted;
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  font-size: $fs-small;
+  font-weight: 600;
+  color: $color-accent-cyan;
+  transition: gap $transition-fast, color $transition-fast;
+
+  &:hover {
+    gap: 12px;
+    color: $color-white;
+  }
+
+  @include focus-ring;
+}
+
+.cardFooter {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.cardPrice {
+  margin-top: 14px;
+  font-size: $fs-h3;
+  font-weight: 700;
+  color: $color-white;
+}
+
+// --- Списки --------------------------------------------------------------
+.list {
+  display: grid;
+  gap: 12px;
+}
+
+.listTwo {
+  @include from('md') {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 32px;
+  }
+}
+
+.listItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: $color-text-muted;
+}
+
+.listMarker {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  margin-top: 9px;
+  background: $gradient-brand;
+  border-radius: 3px;
+  transform: rotate(45deg);
+}
+
+.listMarkerSquare {
+  border-radius: 2px;
+  transform: none;
+}
+
+// --- Текстовые блоки -----------------------------------------------------
+.prose {
+  max-width: 72ch;
+
+  p {
+    color: $color-text-muted;
+
+    + p {
+      margin-top: 16px;
+    }
+  }
+
+  strong {
+    color: $color-text;
+  }
+}
+
+.statement {
+  max-width: 72ch;
+  margin-top: 24px;
+  padding: 22px 24px;
+  font-size: $fs-lead;
+  line-height: $lh-snug;
+  color: $color-text;
+  background: rgba(139, 92, 246, 0.09);
+  border: 1px solid rgba(139, 92, 246, 0.24);
+  border-left-width: 3px;
+  border-radius: $radius-md;
+}
+
+.note {
+  max-width: 72ch;
+  margin-top: 20px;
+  padding-left: 16px;
+  font-size: $fs-small;
+  color: $color-text-dim;
+  border-left: 2px solid rgba(34, 211, 238, 0.5);
+}
+
+.notice {
+  max-width: 74ch;
+  margin-top: 28px;
+  padding: 18px 20px;
+  font-size: $fs-small;
+  color: $color-text-muted;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed $color-border-strong;
+  border-radius: $radius-md;
+}
+
+// --- Двухколоночные раскладки -------------------------------------------
+.twoColumn {
+  display: grid;
+  gap: 28px;
+
+  @include from('lg') {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    align-items: start;
+    gap: 56px;
+  }
+}
+
+.twoColumnEven {
+  @include from('lg') {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.aside {
+  @include card;
+
+  padding: 24px;
+
+  @include from('md') {
+    padding: 28px;
+  }
+}
+
+// --- Фото основателя -----------------------------------------------------
+.photo {
+  position: relative;
+  overflow: hidden;
+  max-width: 440px;
+  background: linear-gradient(160deg, rgba(139, 92, 246, 0.22), rgba(34, 211, 238, 0.14));
+  border: 1px solid $color-border-strong;
+  border-radius: $radius-xl;
+  box-shadow: $shadow-raise;
+}
+
+.photoImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.photoMeta {
+  padding: 18px 20px;
+  border-top: 1px solid $color-border;
+}
+
+.photoName {
+  font-size: $fs-h4;
+  font-weight: 700;
+  color: $color-white;
+}
+
+.photoRole {
+  margin-top: 4px;
+  font-size: $fs-small;
+  color: $color-text-muted;
+}
+
+// --- Показатели ----------------------------------------------------------
+.stats {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  margin-top: 24px;
+}
+
+.stat {
+  @include card;
+
+  padding: 18px 20px;
+}
+
+.statValue {
+  @include gradient-text;
+
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.statLabel {
+  margin-top: 6px;
+  font-size: $fs-small;
+  color: $color-text-muted;
+}
+
+// --- Контакты ------------------------------------------------------------
+.contactGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+
+  @include from('md') {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.contactCard {
+  @include card;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px;
+  transition: border-color $transition-base, transform $transition-base;
+
+  &:hover {
+    border-color: rgba(34, 211, 238, 0.4);
+    transform: translateY(-2px);
+  }
+
+  @include reduced-motion {
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.contactLabel {
+  font-size: $fs-small;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-text-dim;
+}
+
+.contactValue {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: $color-white;
+  word-break: break-word;
+}
+
+.contactHint {
+  font-size: $fs-small;
+  color: $color-text-muted;
+}
+
+// --- Финальный CTA -------------------------------------------------------
+.ctaSection {
+  @include section-space(40px, 72px);
+}
+
+.ctaBox {
+  @include container;
+
+  position: relative;
+  overflow: hidden;
+  padding: 32px 24px;
+  background:
+    radial-gradient(680px 320px at 12% 0%, rgba(139, 92, 246, 0.24), transparent 68%),
+    radial-gradient(560px 300px at 92% 100%, rgba(34, 211, 238, 0.18), transparent 66%),
+    $color-card;
+  border: 1px solid $color-border-strong;
+  border-radius: $radius-xl;
+  box-shadow: $shadow-raise;
+
+  @include from('md') {
+    padding: 48px 44px;
+  }
+
+  @include from('lg') {
+    padding: 56px 56px;
+  }
+}
+
+.ctaTitle {
+  max-width: 26ch;
+  font-size: $fs-h2;
+}
+
+.ctaText {
+  max-width: 62ch;
+  margin-top: 16px;
+  color: $color-text-muted;
+}
+
+.ctaActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+// --- Служебные -----------------------------------------------------------
+.divider {
+  height: 1px;
+  margin-block: 32px;
+  background: linear-gradient(90deg, $color-border, transparent);
+}
+
+.spacer {
+  height: 16px;
+}
+
+.center {
+  text-align: center;
+  margin-inline: auto;
+}
+
+// --- Карточка кейса ------------------------------------------------------
+.caseSection {
+  @include card;
+
+  padding: 22px;
+
+  @include from('md') {
+    padding: 26px;
+  }
+}
+
+.caseIndex {
+  font-size: $fs-tiny;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: rgba(34, 211, 238, 0.8);
+}
+
+.caseTitle {
+  margin-top: 10px;
+  font-size: $fs-h4;
+}
+
+.casePending {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 6px 12px;
+  font-size: $fs-tiny;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: $color-text-muted;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid $color-border;
+  border-radius: $radius-pill;
+}
+
+.casePendingDot {
+  width: 7px;
+  height: 7px;
+  background: $color-accent-purple;
+  border-radius: 50%;
+}
+
+.caseText {
+  margin-top: 12px;
+  font-size: $fs-small;
+  color: $color-text-dim;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: $fs-small;
+  font-weight: 600;
+  color: $color-accent-cyan;
+
+  &:hover {
+    color: $color-white;
+  }
+
+  @include focus-ring;
+}
+
+// --- Правовые тексты -----------------------------------------------------
+.privacySection {
+  @include card;
+
+  padding: 22px;
+  margin-bottom: 16px;
+
+  @include from('md') {
+    padding: 26px 28px;
+  }
+}
+
+.privacyList {
+  margin-top: 18px;
+}

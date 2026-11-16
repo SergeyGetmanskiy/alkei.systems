@@ -1,0 +1,144 @@
+@use '../../styles/index' as *;
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: $z-dialog;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 12px;
+  background: rgba(4, 6, 14, 0.72);
+  backdrop-filter: blur(6px);
+  overflow-y: auto;
+
+  @include from('md') {
+    align-items: center;
+    padding: 24px;
+  }
+}
+
+.dialog {
+  width: 100%;
+  max-width: 560px;
+  padding: 24px;
+  background-color: $color-card;
+  background-image: $gradient-surface;
+  border: 1px solid $color-border-strong;
+  border-radius: $radius-xl;
+  box-shadow: $shadow-raise;
+  animation: dialog-in $transition-base;
+
+  @include from('md') {
+    padding: 30px;
+  }
+}
+
+@include reduced-motion {
+  .dialog {
+    animation: none;
+  }
+}
+
+@keyframes dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.title {
+  font-size: $fs-h3;
+}
+
+.text {
+  margin-top: 10px;
+  font-size: $fs-small;
+  color: $color-text-muted;
+}
+
+.channels {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.channel {
+  display: grid;
+  gap: 2px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  transition: border-color $transition-base, background-color $transition-base;
+
+  &:hover {
+    background: rgba(139, 92, 246, 0.12);
+    border-color: rgba(139, 92, 246, 0.5);
+  }
+
+  @include focus-ring;
+}
+
+.channelLabel {
+  font-size: $fs-tiny;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $color-text-dim;
+}
+
+.channelValue {
+  font-weight: 600;
+  color: $color-white;
+  word-break: break-word;
+}
+
+.channelHint {
+  font-size: $fs-small;
+  color: $color-text-muted;
+}
+
+.channelAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-size: $fs-small;
+  font-weight: 600;
+  color: $color-accent-cyan;
+}
+
+.message {
+  margin-top: 20px;
+  padding: 16px;
+  background: rgba(34, 211, 238, 0.07);
+  border: 1px solid rgba(34, 211, 238, 0.24);
+  border-radius: $radius-md;
+}
+
+.messageLabel {
+  display: block;
+  font-size: $fs-tiny;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(34, 211, 238, 0.9);
+}
+
+.messageText {
+  margin-block: 8px 14px;
+  font-size: $fs-small;
+  color: $color-text;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}

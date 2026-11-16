@@ -1,0 +1,143 @@
+@use '../../styles/index' as *;
+
+.accordion {
+  display: grid;
+  gap: 14px;
+}
+
+.item {
+  @include card;
+
+  padding: 0;
+  overflow: hidden;
+  transition: border-color $transition-base;
+}
+
+.itemOpen {
+  border-color: rgba(139, 92, 246, 0.42);
+}
+
+.heading {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.trigger {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  padding: 20px;
+
+  @include from('md') {
+    padding: 24px 26px;
+  }
+
+  @include focus-ring(-2px);
+
+  &:hover .indicator {
+    background: rgba(139, 92, 246, 0.28);
+    border-color: rgba(139, 92, 246, 0.6);
+  }
+}
+
+.triggerText {
+  display: grid;
+  gap: 8px;
+  flex: 1;
+  text-align: left;
+}
+
+.title {
+  font-size: $fs-h4;
+  font-weight: 700;
+  color: $color-white;
+}
+
+.fullName {
+  font-weight: 500;
+  color: $color-text-muted;
+}
+
+.purpose {
+  font-size: $fs-small;
+  color: $color-text-muted;
+}
+
+.indicator {
+  position: relative;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  margin-top: 2px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid $color-border-strong;
+  border-radius: $radius-sm;
+  transition: background-color $transition-base, border-color $transition-base, transform $transition-base;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: $color-text;
+    border-radius: 2px;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    width: 12px;
+    height: 2px;
+  }
+
+  &::after {
+    width: 2px;
+    height: 12px;
+  }
+}
+
+.indicatorOpen {
+  transform: rotate(180deg);
+
+  &::after {
+    opacity: 0;
+  }
+}
+
+.panel {
+  padding: 0 20px 22px;
+
+  @include from('md') {
+    padding: 0 26px 26px;
+  }
+}
+
+.panel[hidden] {
+  display: none;
+}
+
+.details {
+  display: grid;
+  gap: 10px;
+  padding-top: 18px;
+  border-top: 1px solid $color-border;
+}
+
+.detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: $fs-small;
+  color: $color-text-muted;
+}
+
+.detailMarker {
+  flex: none;
+  width: 6px;
+  height: 6px;
+  margin-top: 8px;
+  background: $gradient-brand;
+  border-radius: 50%;
+}

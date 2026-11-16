@@ -1,0 +1,121 @@
+@use '../../styles/index' as *;
+
+.footer {
+  margin-top: auto;
+  padding-top: 48px;
+  background: rgba(17, 24, 39, 0.6);
+  border-top: 1px solid $color-border;
+}
+
+.inner {
+  @include container;
+
+  display: grid;
+  gap: 32px;
+
+  @include from('md') {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include from('lg') {
+    grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr));
+    gap: 40px;
+  }
+}
+
+.brandColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 420px;
+}
+
+.tagline {
+  font-size: $fs-small;
+  color: $color-text-muted;
+}
+
+.legal {
+  font-size: $fs-tiny;
+  color: $color-text-dim;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.columnTitle {
+  font-size: $fs-tiny;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $color-text-dim;
+}
+
+.list {
+  display: grid;
+  gap: 10px;
+}
+
+.link {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: $fs-small;
+  color: $color-text-muted;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $color-white;
+  }
+
+  @include focus-ring;
+}
+
+.linkActive {
+  color: $color-white;
+}
+
+.linkValue {
+  font-weight: 600;
+  color: $color-text;
+}
+
+.linkHint {
+  font-size: $fs-tiny;
+  color: $color-text-dim;
+}
+
+.bottom {
+  margin-top: 40px;
+  border-top: 1px solid $color-border;
+}
+
+.bottomInner {
+  @include container;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-block: 20px;
+}
+
+.copyright {
+  font-size: $fs-tiny;
+  color: $color-text-dim;
+}
+
+.privacyLink {
+  font-size: $fs-tiny;
+  color: $color-text-muted;
+
+  &:hover {
+    color: $color-accent-cyan;
+  }
+
+  @include focus-ring;
+}

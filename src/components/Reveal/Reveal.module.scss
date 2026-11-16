@@ -1,0 +1,20 @@
+@use '../../styles/index' as *;
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity $transition-slow, transform $transition-slow;
+}
+
+.visible {
+  opacity: 1;
+  transform: none;
+}
+
+@include reduced-motion {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

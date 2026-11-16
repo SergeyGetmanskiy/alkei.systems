@@ -1,0 +1,44 @@
+@use '../../styles/index' as *;
+
+.switcher {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid $color-border;
+  border-radius: $radius-pill;
+}
+
+.item {
+  padding: 6px 11px;
+  font-size: $fs-tiny;
+  font-weight: 600;
+  color: $color-text-muted;
+  border-radius: $radius-pill;
+  transition: color $transition-fast, background-color $transition-fast;
+
+  &:hover {
+    color: $color-white;
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  @include focus-ring;
+}
+
+.active {
+  color: $color-white;
+  background: rgba(139, 92, 246, 0.28);
+}
+
+.stacked {
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  border-radius: $radius-md;
+
+  .item {
+    padding: 10px 14px;
+    border-radius: $radius-sm;
+    text-align: left;
+  }
+}

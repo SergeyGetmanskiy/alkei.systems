@@ -1,0 +1,105 @@
+@use 'sass:map';
+@use './tokens' as *;
+
+// Точки перелома
+$breakpoints: (
+  'sm': 480px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1280px,
+);
+
+/// Медиазапрос «от указанной ширины».
+@mixin from($key) {
+  $width: map.get($breakpoints, $key);
+
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+/// Медиазапрос «до указанной ширины».
+@mixin until($key) {
+  $width: map.get($breakpoints, $key);
+  $value: $width - 0.02px;
+
+  @media (max-width: $value) {
+    @content;
+  }
+}
+
+/// Ограничивающий контейнер страницы.
+@mixin container {
+  width: 100%;
+  max-width: $container-max;
+  margin-inline: auto;
+  padding-inline: $container-pad-sm;
+
+  @include from('md') {
+    padding-inline: $container-pad-md;
+  }
+
+  @include from('lg') {
+    padding-inline: $container-pad-lg;
+  }
+}
+
+/// Вертикальные отступы секции.
+@mixin section-space($top: 64px, $bottom: 64px) {
+  padding-block: $top $bottom;
+
+  @include from('md') {
+    padding-block: $top * 1.25 $bottom * 1.25;
+  }
+
+  @include from('lg') {
+    padding-block: $top * 1.5 $bottom * 1.5;
+  }
+}
+
+/// Базовый вид карточки.
+@mixin card {
+  background-color: $color-card;
+  background-image: $gradient-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-card;
+}
+
+/// Градиентный текст.
+@mixin gradient-text {
+  background: $gradient-text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/// Видимый фокус для клавиатурной навигации.
+@mixin focus-ring($offset: 3px) {
+  &:focus-visible {
+    outline: 2px solid $color-accent-cyan;
+    outline-offset: $offset;
+    border-radius: $radius-xs;
+  }
+}
+
+/// Скрыть элемент визуально, оставив доступным для скринридеров.
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/// Уважение к настройке «уменьшить движение».
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}

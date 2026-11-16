@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://alkei.systems/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/kz/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/ru/mentor</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/mentor" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/mentor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/mentor" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/mentor" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/kz/mentor</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/mentor" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/mentor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/mentor" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/mentor" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/en/mentor</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/mentor" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/mentor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/mentor" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/mentor" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/ru/startup</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/startup" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/startup" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/startup" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/startup" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/kz/startup</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/startup" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/startup" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/startup" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/startup" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/en/startup</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/startup" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/startup" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/startup" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/startup" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/ru/product</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/product" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/product" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/product" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/product" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/kz/product</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/product" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/product" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/product" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/product" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/en/product</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/product" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/product" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/product" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/product" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/ru/experience</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/experience" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/experience" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/experience" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/experience" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/kz/experience</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/experience" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/experience" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/experience" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/experience" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/en/experience</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/experience" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/experience" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/experience" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/experience" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/ru/projects/instroy</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/projects/instroy" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/projects/instroy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/projects/instroy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/projects/instroy" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/kz/projects/instroy</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/projects/instroy" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/projects/instroy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/projects/instroy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/projects/instroy" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/en/projects/instroy</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/projects/instroy" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/projects/instroy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/projects/instroy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/projects/instroy" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/ru/projects/twelveai</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/projects/twelveai" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/projects/twelveai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/projects/twelveai" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/projects/twelveai" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/kz/projects/twelveai</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/projects/twelveai" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/projects/twelveai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/projects/twelveai" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/projects/twelveai" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/en/projects/twelveai</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/projects/twelveai" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/projects/twelveai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/projects/twelveai" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/projects/twelveai" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/ru/partners</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/partners" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/partners" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/partners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/partners" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/kz/partners</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/partners" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/partners" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/partners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/partners" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/en/partners</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/partners" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/partners" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/partners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/partners" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/ru/about</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/about" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/about" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/kz/about</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/about" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/about" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/about" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/about" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/ru/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/privacy" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/kz/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/privacy" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alkei.systems/en/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alkei.systems/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://alkei.systems/kz/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alkei.systems/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alkei.systems/ru/privacy" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>

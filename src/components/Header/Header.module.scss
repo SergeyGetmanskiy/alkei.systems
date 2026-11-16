@@ -1,0 +1,163 @@
+@use '../../styles/index' as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: $z-header;
+  background: rgba(11, 15, 26, 0.82);
+  border-bottom: 1px solid $color-border;
+  backdrop-filter: blur(16px);
+}
+
+.inner {
+  @include container;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 72px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+
+  @include focus-ring;
+}
+
+.nav {
+  display: none;
+
+  @include from('lg') {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-left: 24px;
+  }
+}
+
+.link {
+  padding: 9px 12px;
+  font-size: $fs-small;
+  font-weight: 500;
+  color: $color-text-muted;
+  border-radius: $radius-sm;
+  transition: color $transition-fast, background-color $transition-fast;
+
+  &:hover {
+    color: $color-white;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  @include focus-ring;
+}
+
+.linkActive {
+  color: $color-white;
+  background: rgba(139, 92, 246, 0.16);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.switcherDesktop {
+  display: none;
+
+  @include from('md') {
+    display: inline-flex;
+  }
+}
+
+.ctaDesktop {
+  display: none;
+
+  @include from('lg') {
+    display: inline-flex;
+  }
+}
+
+.burger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid $color-border-strong;
+  border-radius: $radius-sm;
+
+  @include from('lg') {
+    display: none;
+  }
+
+  @include focus-ring;
+}
+
+.burgerLines {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: $color-text;
+  border-radius: 2px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 2px;
+    background: $color-text;
+    border-radius: 2px;
+  }
+
+  &::before {
+    top: -6px;
+  }
+
+  &::after {
+    top: 6px;
+  }
+}
+
+.mobilePanel {
+  @include container;
+
+  display: grid;
+  gap: 18px;
+  padding-block: 18px 26px;
+  border-top: 1px solid $color-border;
+
+  @include from('lg') {
+    display: none;
+  }
+}
+
+.mobileNav {
+  display: grid;
+  gap: 4px;
+}
+
+.mobileLink {
+  padding: 12px 14px;
+  font-size: $fs-body;
+  font-weight: 500;
+  color: $color-text;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid $color-border;
+  border-radius: $radius-sm;
+
+  &:hover {
+    border-color: $color-border-strong;
+  }
+
+  @include focus-ring;
+}
+
+.switcherMobile {
+  justify-self: start;
+}

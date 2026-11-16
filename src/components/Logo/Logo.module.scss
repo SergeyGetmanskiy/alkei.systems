@@ -1,0 +1,30 @@
+@use '../../styles/index' as *;
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mark {
+  flex: none;
+}
+
+.wordmark {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.full {
+  color: $color-white;
+}
+
+.dark {
+  color: #0b0f1a;
+}
+
+.light {
+  color: $color-white;
+}
